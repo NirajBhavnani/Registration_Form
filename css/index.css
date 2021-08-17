@@ -1,0 +1,84 @@
+/* applying css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Resets the box-model so that width and height are not affected by border or padding.*/
+}
+
+body{
+    font-family: 'Helvetica', sans-serif;
+    background-color: darkgrey;
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.container h1, p{
+    margin-bottom: 20px;
+}
+
+.container hr{
+    border-top: dashed 2px dodgerblue;
+    margin: 15px;
+}
+
+.container label{
+    font-size: large;
+}
+
+input[type=text], input[type=password], input[type=date]{
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    border: none;
+}
+
+.gContainer select{
+    appearance: none;
+    font-size: small;
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    opacity: 0.7;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+.gContainer select:hover{
+    cursor: pointer;
+    opacity: 1;
+    background-color: dodgerblue;
+}
+
+.nameContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameContainer input[type=text]{
+    width: 49%;
+}
+
+.regBtn{
+    background-color: dodgerblue;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0 7px 0;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: large;
+}
+
+.regBtn:hover{
+    opacity: 1;
+}
