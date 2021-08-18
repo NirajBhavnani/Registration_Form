@@ -8,43 +8,65 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <form name="regForm">
+    <form>
         <div class="container">
             <h1>Sign Up</h1>
             <p>Enter all the details for creating an account</p>
             <hr>
 
-            <label for="name"><b>Name</b></label>
-            <div class="nameContainer">
-                <input type="text" placeholder="First Name" name="fName" required>
-                <input type="text" placeholder="Last Name" name="lName" required>
+            <label for="fName"><b>First Name</b></label>
+            <div class="formControl">
+                <input type="text" placeholder="First Name" name="fName" id="First Name">
+                <small></small>
+            </div>
+            
+            <label for="lName"><b>Last Name</b></label>
+            <div class="formControl">
+                <input type="text" placeholder="Last Name" name="lName" id="Last Name">
+                <small></small>
             </div>
 
             <label for="birthday"><b>Date of Birth</b></label>
-            <input type="date" name="birthday" required>
+            <div class="formControl">
+                <input type="date" name="birthday" id="Birthday">
+                <small></small>
+            </div>
 
             <label for="gender"><b>Gender</b></label>
             <div class="gContainer">
-                <select name="gender" required>
-                    <option value="default" selected="selected">I am...</option>
-                    <option value="Female">Female</option>
-                    <option value="Male">Male</option>
-                    <option value="Other">Other</option>
-                </select>
+                <div class="formControl">
+                    <select name="gender" id="Gender">
+                        <option value="">I am...</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <small></small>
+                </div>
             </div>
 
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+            <div class="formControl">
+                <input type="text" placeholder="Enter Email" name="email" id="Email">
+                <small></small>
+            </div>
 
             <label for="pwd"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="pwd" required>
+            <div class="formControl">
+                <input type="password" placeholder="Enter Password" name="pwd" id="Password">
+                <small></small>
+            </div>
 
             <label for="pwd-confirm"><b>Confirm Password</b></label>
-            <input type="password" placeholder="Confirm Password" name="pwd-confirm" required>
+            <div class="formControl">
+                <input type="password" placeholder="Confirm Password" name="pwd-confirm" id="Confirm Password">
+                <small></small>
+            </div>
             <hr>
 
-            <button type="submit" class="regBtn">Register</button>
+            <button type="button" class="regBtn" onclick="validate()">Register</button>
         </div>
     </form>
+    <script src="/js/index.js"></script>
 </body>
 </html>
